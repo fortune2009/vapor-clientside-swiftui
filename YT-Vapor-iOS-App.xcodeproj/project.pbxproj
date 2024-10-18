@@ -7,18 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C81342C82C0962BE00899310 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81342C72C0962BE00899310 /* Constants.swift */; };
+		C81342CA2C19555C00899310 /* ModalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81342C92C19555C00899310 /* ModalType.swift */; };
+		C81342CE2C19580B00899310 /* AddUpdateSong.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81342CD2C19580B00899310 /* AddUpdateSong.swift */; };
+		C81342D02C19E73600899310 /* AddUpdateSongViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81342CF2C19E73600899310 /* AddUpdateSongViewModel.swift */; };
 		C87A829F2C06B80C00840E1F /* YT_Vapor_iOS_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A829E2C06B80C00840E1F /* YT_Vapor_iOS_AppApp.swift */; };
-		C87A82A12C06B80C00840E1F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A82A02C06B80C00840E1F /* ContentView.swift */; };
+		C87A82A12C06B80C00840E1F /* SongList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A82A02C06B80C00840E1F /* SongList.swift */; };
 		C87A82A32C06B81000840E1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C87A82A22C06B81000840E1F /* Assets.xcassets */; };
 		C87A82A62C06B81000840E1F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C87A82A52C06B81000840E1F /* Preview Assets.xcassets */; };
+		C87A82B12C06BC9B00840E1F /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A82B02C06BC9B00840E1F /* Song.swift */; };
+		C87A82B32C06BE0900840E1F /* SongListVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A82B22C06BE0900840E1F /* SongListVIewModel.swift */; };
+		C87A82B52C06C2C700840E1F /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A82B42C06C2C700840E1F /* HttpClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C81342C72C0962BE00899310 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C81342C92C19555C00899310 /* ModalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalType.swift; sourceTree = "<group>"; };
+		C81342CD2C19580B00899310 /* AddUpdateSong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUpdateSong.swift; sourceTree = "<group>"; };
+		C81342CF2C19E73600899310 /* AddUpdateSongViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUpdateSongViewModel.swift; sourceTree = "<group>"; };
 		C87A829B2C06B80C00840E1F /* YT-Vapor-iOS-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YT-Vapor-iOS-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C87A829E2C06B80C00840E1F /* YT_Vapor_iOS_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YT_Vapor_iOS_AppApp.swift; sourceTree = "<group>"; };
-		C87A82A02C06B80C00840E1F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C87A82A02C06B80C00840E1F /* SongList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongList.swift; sourceTree = "<group>"; };
 		C87A82A22C06B81000840E1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C87A82A52C06B81000840E1F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C87A82B02C06BC9B00840E1F /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		C87A82B22C06BE0900840E1F /* SongListVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListVIewModel.swift; sourceTree = "<group>"; };
+		C87A82B42C06C2C700840E1F /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +65,11 @@
 		C87A829D2C06B80C00840E1F /* YT-Vapor-iOS-App */ = {
 			isa = PBXGroup;
 			children = (
+				C87A82AC2C06B8E900840E1F /* Models */,
+				C87A82AE2C06B91C00840E1F /* Views */,
+				C87A82AD2C06B8FB00840E1F /* View Models */,
+				C87A82AF2C06BA1E00840E1F /* Utilities */,
 				C87A829E2C06B80C00840E1F /* YT_Vapor_iOS_AppApp.swift */,
-				C87A82A02C06B80C00840E1F /* ContentView.swift */,
 				C87A82A22C06B81000840E1F /* Assets.xcassets */,
 				C87A82A42C06B81000840E1F /* Preview Content */,
 			);
@@ -65,6 +82,42 @@
 				C87A82A52C06B81000840E1F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C87A82AC2C06B8E900840E1F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C87A82B02C06BC9B00840E1F /* Song.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C87A82AD2C06B8FB00840E1F /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				C87A82B22C06BE0900840E1F /* SongListVIewModel.swift */,
+				C81342CF2C19E73600899310 /* AddUpdateSongViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		C87A82AE2C06B91C00840E1F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C87A82A02C06B80C00840E1F /* SongList.swift */,
+				C81342CD2C19580B00899310 /* AddUpdateSong.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C87A82AF2C06BA1E00840E1F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C87A82B42C06C2C700840E1F /* HttpClient.swift */,
+				C81342C72C0962BE00899310 /* Constants.swift */,
+				C81342C92C19555C00899310 /* ModalType.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +190,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C87A82A12C06B80C00840E1F /* ContentView.swift in Sources */,
+				C87A82B52C06C2C700840E1F /* HttpClient.swift in Sources */,
+				C81342D02C19E73600899310 /* AddUpdateSongViewModel.swift in Sources */,
+				C81342CE2C19580B00899310 /* AddUpdateSong.swift in Sources */,
+				C81342CA2C19555C00899310 /* ModalType.swift in Sources */,
+				C87A82B12C06BC9B00840E1F /* Song.swift in Sources */,
+				C87A82B32C06BE0900840E1F /* SongListVIewModel.swift in Sources */,
+				C87A82A12C06B80C00840E1F /* SongList.swift in Sources */,
 				C87A829F2C06B80C00840E1F /* YT_Vapor_iOS_AppApp.swift in Sources */,
+				C81342C82C0962BE00899310 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
